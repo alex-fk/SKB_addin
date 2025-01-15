@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0" xsi:type="MailApp">
+  <Id>5f104c30-4521-46c3-aa45-0353938e91d4</Id>
+  <Version>1.0.0.0</Version>
+  <ProviderName>Совкомбанк совещания</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="Совкомбанк совещания">
+	<Override Locale="en-US" Value="Sovcombank Meetings"/>
+  </DisplayName>
+  <Description DefaultValue="Create meeting Sovcombank."/>
+	<Override Locale="ru-RU" Value="Запланировать встречу"/>
+  </Description>
+  <IconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-128.png"/>
+  <SupportUrl DefaultValue="https://www.sovcombank.ru/"/>
+  <AppDomains>
+    <AppDomain>https://sovcombank.ru</AppDomain>
+  </AppDomains>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="Mailbox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemRead">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:3000/taskpane/taskpane.html"/>
+        <RequestedHeight>250</RequestedHeight>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+    <Rule xsi:type="RuleCollection" Mode="Or">
+        <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit"/>
+    </Rule>
+    <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox"/>
+      </bt:Sets>
+    </Requirements>
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor>
+          <FunctionFile resid="Commands.Url"/>
+          <ExtensionPoint xsi:type="AppointmentOrganizerCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="aocReadGroup">
+                <Label resid="GroupLabel"/>
+                <Control xsi:type="Button" id="aocActionButton">
+                  <Label resid="TaskpaneButtonAdd.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButtonAdd.Label"/>
+                    <Description resid="TaskpaneButtonAdd.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ExecuteFunction">
+                    <FunctionName>addDefaultMeeting</FunctionName>
+                  </Action>
+                </Control>
+                <Control xsi:type="Button" id="talkActionButton">
+                  <Label resid="TaskpaneButtonSettings.Label"/>
+                  <Supertip>
+                    <Title resid="TaskpaneButtonSettings.Label"/>
+                    <Description resid="TaskpaneButtonSettings.Tooltip"/>
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="Icon.16x16"/>
+                    <bt:Image size="32" resid="Icon.32x32"/>
+                    <bt:Image size="80" resid="Icon.80x80"/>
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/taskpane.html"/>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="GroupLabel" DefaultValue="Sovcombank Add-in">
+			<bt:Override Locale="ru-RU" Value="Совкомбанк.Совещания"/>
+		</bt:String>
+        <bt:String id="TaskpaneButtonAdd.Label" DefaultValue="Add room in Sovcombank">
+			<bt:Override Locale="ru-RU" Value="Запланировать встречу"/>
+		</bt:String>
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="TaskpaneButtonAdd.Tooltip" DefaultValue="Create room in Sovcombank videoconferencing service.">
+			<bt:Override Locale="ru-RU" Value="Добавить комнату в сервисе видеоконференций Совкомбанк"/>
+		</bt:String>
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
