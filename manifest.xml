@@ -10,7 +10,7 @@
   <Description DefaultValue="Create meeting Sovcombank">
 	  <Override Locale="ru-RU" Value="Запланировать встречу"/>
   </Description>
-  <IconUrl DefaultValue="https://localhost:5000/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://localhost:5500/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:5500/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.sovcombank.ru/"/>
   <AppDomains>
