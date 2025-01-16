@@ -5,10 +5,10 @@
   <ProviderName>Совкомбанк совещания</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <DisplayName DefaultValue="Совкомбанк совещания">
-	<Override Locale="en-US" Value="Sovcombank Meetings"/>
+	  <Override Locale="en-US" Value="Sovcombank Meetings"/>
   </DisplayName>
-  <Description DefaultValue="Create meeting Sovcombank."/>
-	<Override Locale="ru-RU" Value="Запланировать встречу"/>
+  <Description DefaultValue="Create meeting Sovcombank.">
+	  <Override Locale="ru-RU" Value="Запланировать встречу"/>
   </Description>
   <IconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-128.png"/>
