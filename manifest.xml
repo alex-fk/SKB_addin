@@ -12,9 +12,10 @@
   </Description>
   <IconUrl DefaultValue="https://localhost:5500/assets/icon-64.png"/>
   <HighResolutionIconUrl DefaultValue="https://localhost:5500/assets/icon-128.png"/>
-  <SupportUrl DefaultValue="https://www.sovcombank.ru/"/>
+  <SupportUrl DefaultValue="https://sovcombank.ru"/>
   <AppDomains>
-    <AppDomain>https://sovcombank.ru</AppDomain>
+    <AppDomain>https://sovcombank.group</AppDomain>
+    <AppDomain>https://localhost:5500/AppDomain</AppDomain>
   </AppDomains>
   <Hosts>
     <Host Name="Mailbox"/>
@@ -34,7 +35,7 @@
   </FormSettings>
   <Permissions>ReadWriteItem</Permissions>
     <Rule xsi:type="RuleCollection" Mode="Or">
-        <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit"/>
+        <Rule xsi:type="ItemIs" ItemType="Message" FormType="Read"/>
     </Rule>
     <DisableEntityHighlighting>false</DisableEntityHighlighting>
   <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
@@ -62,8 +63,8 @@
                     <bt:Image size="32" resid="Icon.32x32"/>
                     <bt:Image size="80" resid="Icon.80x80"/>
                   </Icon>
-                  <Action xsi:type="ExecuteFunction">
-                    <FunctionName>addDefaultMeeting</FunctionName>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="Taskpane.Url"/>
                   </Action>
                 </Control>
               </Group>
