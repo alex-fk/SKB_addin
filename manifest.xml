@@ -7,11 +7,11 @@
   <DisplayName DefaultValue="Совкомбанк совещания">
 	  <Override Locale="en-US" Value="Sovcombank Meetings"/>
   </DisplayName>
-  <Description DefaultValue="Create meeting Sovcombank.">
+  <Description DefaultValue="Create meeting Sovcombank">
 	  <Override Locale="ru-RU" Value="Запланировать встречу"/>
   </Description>
-  <IconUrl DefaultValue="https://localhost:3000/assets/icon-64.png"/>
-  <HighResolutionIconUrl DefaultValue="https://localhost:3000/assets/icon-128.png"/>
+  <IconUrl DefaultValue="https://localhost:5000/assets/icon-64.png"/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:5500/assets/icon-128.png"/>
   <SupportUrl DefaultValue="https://www.sovcombank.ru/"/>
   <AppDomains>
     <AppDomain>https://sovcombank.ru</AppDomain>
@@ -27,7 +27,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://localhost:3000/src/taskpane/taskpane.html"/>
+        <SourceLocation DefaultValue="https://localhost:5500/src/taskpane/taskpane.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -74,13 +74,13 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:3000/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:3000/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:3000/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://localhost:5500/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://localhost:5500/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://localhost:5500/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="Commands.Url" DefaultValue="https://localhost:3000/src/commands/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:3000/src/taskpane/taskpane.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://localhost:5500/src/commands/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://localhost:5500/src/taskpane/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Sovcombank Add-in">
