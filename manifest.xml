@@ -85,9 +85,9 @@
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GroupLabel" DefaultValue="Sovcombank Add-in">
-			<bt:Override Locale="ru-RU" Value="Совкомбанк.Совещания"/>
+			<bt:Override Locale="ru-RU" Value="Совкомбанк совещания"/>
 		</bt:String>
-        <bt:String id="TaskpaneButtonAdd.Label" DefaultValue="Add room in Sovcombank">
+        <bt:String id="TaskpaneButtonAdd.Label" DefaultValue="Add room">
 			<bt:Override Locale="ru-RU" Value="Запланировать встречу"/>
 		</bt:String>
       </bt:ShortStrings>
