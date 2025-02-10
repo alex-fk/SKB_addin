@@ -1,0 +1,91 @@
+/* 
+ * Copyright (c) Microsoft Corporation. All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+ html,
+ body {
+     width: 100%;
+     height: 100%;
+     margin: 0;
+     padding: 0;
+     font-family: 'Roboto', sans-serif;
+     overflow: hidden;
+ }
+ h1{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+ }
+ .form-search-room{
+    margin:10px 5px;
+    text-align: center;
+ }
+ .form-search-room input{
+    margin:10px 5px;
+ }
+ .input-serach-room{
+    height: 30px;
+    min-width:200px;
+    width:90%;
+    padding:5px 8px;
+    font-size: 16px;
+    border:1px solid #000;
+    border-radius: 2px;
+    text-align: left;
+ }
+ .btn-add-room{
+    background-color: #0F3A8C;
+    color:#fff;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0F3A8C;
+    cursor : pointer;
+    border-radius: 2px;
+ }
+ .btn-add-room:hover{
+    background-color: #fff;
+    color:#0F3A8C;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0F3A8C;
+    cursor : pointer;
+ }
+ .scb-logo{
+    margin-top: 30px;
+    text-align: center;
+ }
+ 
+ ul {
+     margin: 0;
+     padding: 0;
+ }
+ 
+ .scb-welcome__header {
+    padding: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    flex-direction: column;
+    align-items: center;
+ }
+ .icon-list-scb, .icon-list-mts {
+   font-size: 0.9em;
+ }
+ .icon-list-scb::before{
+   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAICSURBVHgBjVLPS1RRFP7Oe3ecHw9bFBXTGFKEMJsSo6LIKAxLbdFmhCgnl8GA0qaCAkf6C0KiAhe5qEUSBLUoItIK+gEDtlF0o+hCEB0dx9GZce69npn3lOdD0AMP3vnO/c75zncvwRP6RjwCSU0gfR0G9NCKkbiyeqoBspBC6lHGfdbYIoGPt3b2QNMYowMgusX/DcM4GAAZ3yCC4zj77B5q7gc3OaJCbLm9D2R+ZPolV+MsV9Ku/DAILxCpjeF8rBmDg5JsqXef8ugnjoasAh4bebyFnM7QXCyA6lJ2+276JVqXEpRvitf5AzTCEMvRs1Boo8X6A9BmnDeJMlbFtZMea9bZl3PCH6R2nlrZQ0E/NxfOHGH57zgNVZzYOXwwERcs4SJPKAPFglJsFL7bxN1Ct5TdtpysMKosyeAJ7CW0DpXJU05qna4q1jD6d09kg+YNqdT7zRRK9wSUeshdZ3Yla3wW5poYgqUnOT3GX9vaoZH/tZno5elS6CY3OQpFPm6b8FBzkLLfvudrnY0Q+oerOAFtfGD/U43L4a+/1sNpz9Qu/OvuqzxP+vL6Jz+XOwwuO+U6kHrAzvdeFdK/jUjow0r4lb2nE+LTwBuYqp4b9LPcnEdmnknDMM0L+NPdhdH2ot1nJy86OixkfFHIUnVv7vjvZHF/BM3pSSSTyn1uAzZDtP3CZBbSAAAAAElFTkSuQmCC);
+   position: absolute;
+   /* width: 15px;
+   height: 15px; */
+   left: 5px;
+   top: 5px;
+   margin:auto;
+ }
+ .icon-list-mts::before{
+   content: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADoSURBVHgB1VK7CsJAEJyLQiytbbS0Enxh4wu1FDsbe+38BQs7f0DwH/wCQbDQQlG0EiwtxUZBJA+S9ZKgJGIIGCycY+GO27nZuV2mI0X4EgJ8wBc5aD8olQxQSoOt99AkBSyfBBZbiJMlvJVLGYi9DoR6AUIti1CvDVSz+H3ZH8FtyIMu3/CmTFfcwsqbLBxPJiGUSwBGcMiyCriSmdVy4iswHEO9S9Di0dc1zXdwLTt4vlpvNMrQ+HewtwRdFB1kGBP2DC1cJP1wJDdI/RHZ8x3K7HKDmm6BmjVQLGIq20GzjdPlf872A2iaZy4T+GbpAAAAAElFTkSuQmCC);
+   position: absolute;
+   /* width: 15px;
+   height: 15px; */
+   left: 5px;
+   top: 5px;
+   margin:auto;
+ }
