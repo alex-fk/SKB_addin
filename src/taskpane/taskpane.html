@@ -9,15 +9,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Совкобанк встречи</title>
+    <base href="/src/">
 
     <!-- Office JavaScript API -->
     <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
 
-    <!-- For more information on Fluent UI, visit https://developer.microsoft.com/fluentui#/. -->
-    <!-- <link rel="stylesheet" href="https://res-1.cdn.office.net/files/fabric-cdn-prod_20230815.002/office-ui-fabric-core/11.1.0/css/fabric.min.css"/> -->
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" type="text/javascript"></script> -->
+
+    <!-- <script src="jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script> 
+    <script src="jquery-ui.min.js" integrity="sha256-AlTido85uXPlSyyaZNsjJXeCs07eSv3r43kyCVc8ChI=" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.7.1.min.js" type="text/javascript"></script> -->
+
+    <!-- <script type="text/javascript" src="taskpane/js/jquery-3.7.1.min.js"></script>  -->
+    <script type="text/javascript" src="taskpane/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="taskpane/js/taskpane.js"></script>
+
 
     <!-- Template styles -->
-    <link href="taskpane.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="taskpane/css/jquery-ui.css" type="text/css"/>
+    <link href="taskpane/css/taskpane.css" rel="stylesheet" type="text/css" />
+
+
 </head>
 
 <body class="">
@@ -25,8 +38,9 @@
         <h1>Введите имя комнаты</h1>
     </header>
     <main id="app-body" class="">
-        <form id="form-search-room" class = "form-search-room" method="post" action="#">
-            <input type="text" name="serach-room" id="input-serach-room" class="input-serach-room" placeholder="Начинайте вводить имя..."/>
+        <form id="form-search-room" class = "form-search-room" method="get" action="#">
+            <input type="hidden" name="userMail" id="input-user-mail" value=""/>
+            <input type="text" name="serach-room" id="input-search-room" class="input-serach-room" placeholder="Начинайте вводить имя..."/>
             <input type="submit" value="Выбрать комнату" class="btn-add-room"/>
           </form>
         <p class="scb-logo">
